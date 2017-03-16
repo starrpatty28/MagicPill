@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -174,15 +175,26 @@
                                     <constraint firstAttribute="height" constant="74" id="ga8-t5-EMb"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Gic-7g-SLt">
+                                <rect key="frame" x="40" y="234" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bad-Rr-eT4"/>
+                                    <constraint firstAttribute="width" constant="240" id="hrr-bk-ozp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cF0-gv-O23" firstAttribute="top" secondItem="Gic-7g-SLt" secondAttribute="bottom" constant="4" id="0IG-e4-NJQ"/>
                             <constraint firstItem="05D-FB-e61" firstAttribute="top" secondItem="kUe-Jm-SOE" secondAttribute="bottom" constant="8" id="3Q9-Zs-2me"/>
+                            <constraint firstItem="Gic-7g-SLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="3nq-Hu-qZ9"/>
                             <constraint firstItem="cF0-gv-O23" firstAttribute="trailing" secondItem="MLq-gl-fMz" secondAttribute="trailing" id="4b6-0p-Vip"/>
                             <constraint firstItem="05D-FB-e61" firstAttribute="centerX" secondItem="rjH-xd-e0Y" secondAttribute="centerX" id="5Hv-WG-jad"/>
                             <constraint firstItem="J1X-sL-7dX" firstAttribute="top" secondItem="zQh-fi-kkM" secondAttribute="bottom" constant="4" id="6NC-aW-Yfr"/>
                             <constraint firstItem="gwd-WX-Tlx" firstAttribute="trailing" secondItem="3vk-no-nCc" secondAttribute="trailing" id="7k5-fm-qCO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gic-7g-SLt" secondAttribute="trailing" constant="24" id="89g-Va-7wh"/>
                             <constraint firstItem="3vk-no-nCc" firstAttribute="top" secondItem="J1X-sL-7dX" secondAttribute="bottom" constant="4" id="8HR-vu-e2o"/>
+                            <constraint firstItem="Gic-7g-SLt" firstAttribute="top" secondItem="XIE-zm-gpY" secondAttribute="bottom" constant="24" id="AQi-4Q-g4S"/>
                             <constraint firstItem="zQh-fi-kkM" firstAttribute="leading" secondItem="XIE-zm-gpY" secondAttribute="leading" id="AXk-Lh-ojT"/>
                             <constraint firstItem="D9R-zD-cqr" firstAttribute="leading" secondItem="gB9-1j-bYL" secondAttribute="leading" id="BZt-YI-gxg"/>
                             <constraint firstItem="cF0-gv-O23" firstAttribute="leading" secondItem="MLq-gl-fMz" secondAttribute="leading" id="Cgg-zx-zOI"/>
@@ -225,6 +237,8 @@
                     <connections>
                         <outlet property="statePicker" destination="kUe-Jm-SOE" id="sjr-fH-FBY"/>
                         <outlet property="statePicketBtn" destination="mDy-ZE-ai8" id="TvE-Mm-PnS"/>
+                        <outlet property="zipCountryLbl" destination="gB9-1j-bYL" id="UW1-oM-cuc"/>
+                        <outlet property="zipCountryTxt" destination="D9R-zD-cqr" id="gE6-fS-36q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -235,5 +249,6 @@
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>

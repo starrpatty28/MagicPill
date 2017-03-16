@@ -12,6 +12,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var statePicketBtn: UIButton!
+    @IBOutlet weak var zipCountryLbl: UILabel!
+    @IBOutlet weak var zipCountryTxt: UITextField!
+    
     
     let states = ["Alaska", "Arkansas", "Texas", "California", "Washington", "Main", "New York"]
 
